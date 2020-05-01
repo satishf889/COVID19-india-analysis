@@ -18,6 +18,6 @@ Data used is from API: https://api.covid19india.org/raw_data.json
  - Racing Bar graph for all states from 30th January,2020 to 1st May,2020
  
 ## Snapshot from notebook
-![alt text](https://github.com/satishf889/COVID19-india-analysis/blob/master/covid-19.jpg?raw=true)
+![Screenshot](https://github.com/satishf889/COVID19-india-analysis/blob/master/covid-19.png?raw=true)
 
 #### Note: Data in this api is getting updated slowly so you might see differences in count.

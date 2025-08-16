@@ -28,8 +28,7 @@ The primary goal of this project is to provide a comprehensive workflow for anal
 
 ```
 .
-├── src/
-│   ├── COVID-19-India.ipynb    
+├── COVID-19-India.ipynb    
 ├── requirements.txt          # List of required Python libraries
 └── README.md                 # This file
 ```

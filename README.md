@@ -1,21 +1,62 @@
-# COVID19-india-analysis
+# 🦠 COVID-19 India Data Analysis & Visualization
 
-This project is created as to understand the increase in confirmed COVID-19 cases in India.
+This project demonstrates a data engineering and visualization pipeline that scrapes raw COVID-19 data from an API, processes it, and generates a dynamic "racing" bar chart visualization. This project showcases skills in data extraction, cleaning, and creating animated data visualizations.
 
-In this project I have created the Racing Bar Graph for increase in confirm cases of each State in India from January,2020 to May,2020.
+-----
 
-Various articles were reffered by me to understand Racing Bar Graph.
-### Links for reference:
-     1) https://towardsdatascience.com/bar-chart-race-in-python-with-matplotlib-8e687a5c8a41
-     2) https://www.kaggle.com/caniban/bar-chart-race-with-matplotlib
-     3) https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest
-     
-Data used is from API: https://api.covid19india.org/raw_data.json
+## 📊 Project Goal
 
-##### Topics covered in this Notebook are:
- - Preprocessing of Raw Data
- - Bar graph of confirmed cases in India for all states on Single Day
- - Racing Bar graph for all states from 30th January,2020 to 1st May,2020
+The primary goal of this project is to provide a comprehensive workflow for analyzing COVID-19 case trends in India. It focuses on:
+
+  * **API Data Extraction:** Fetching raw, unstructured data from `https://api.covid19india.org/raw_data.json`.
+  * **Data Processing:** Cleaning, structuring, and aggregating the raw data into a usable format (e.g., daily confirmed cases per state).
+  * **Dynamic Visualization:** Creating a **running bar chart**  to visually represent the evolution of total COVID-19 cases by state over time. This type of visualization effectively highlights trends and changes in rankings.
+
+-----
+
+## 🛠️ Technologies Used
+
+  * **Python:** The core programming language.
+  * **Requests:** A library for making API calls to fetch the raw JSON data.
+  * **Pandas:** For data loading, cleaning, aggregation, and manipulation.
+  * **Matplotlib & Pandas Plotting:** For creating static plots.
+  * **`matplotlib.animation` or `bar_chart_race`:** For generating the animated running bar chart.
+
+-----
+
+## 📁 Project Structure
+
+```
+.
+├── src/
+│   ├── COVID-19-India.ipynb    
+├── requirements.txt          # List of required Python libraries
+└── README.md                 # This file
+```
+
+-----
+
+## 📝 How to Run the Project
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/satishf889/COVID19-india-analysis.git
+    cd COVID19-india-analysis
+    ```
+2.  **Create and activate a virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+3.  **Install the required libraries:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Run the notebook:**
+    
+    Upon execution, the script will:
+      * Fetch the raw data from the API.
+      * Process the data to aggregate total cases per state over time.
  
 ## Snapshot from notebook
 ![Screenshot](https://github.com/satishf889/COVID19-india-analysis/blob/master/covid-19.png?raw=true)
